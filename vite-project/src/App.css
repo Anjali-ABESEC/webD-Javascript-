@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #111;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 10;
+}
+
+.logo {
+  color: red;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.navbar input {
+  padding: 8px;
+  border-radius: 4px;
+  border: none;
+}
+
+/* Banner */
+.banner {
+  background: url("https://assets.nflxext.com/ffe/siteui/vlv3/9b0bfa41.jpg")
+    center/cover no-repeat;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 60px;
+}
+
+.banner h1 {
+  font-size: 3rem;
+}
+
+.banner p {
+  margin-top: 10px;
+}
+
+/* Rows */
+.row {
+  margin-top: 20px;
+  padding-left: 20px;
+}
+
+.row-posters {
+  display: flex;
+  overflow-x: scroll;
+  padding: 20px;
+}
+
+.row-posters::-webkit-scrollbar {
+  display: none;
+}
+
+/* Posters */
+.poster {
+  max-height: 200px;
+  margin-right: 10px;
+  transition: transform 0.3s;
+  border-radius: 5px;
+}
+
+.poster:hover {
+  transform: scale(1.1);
+}
+.card {
+  margin-right: 10px;
+  text-align: center;
+}
+
+.card button {
+  background: red;
+  color: white;
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+}
